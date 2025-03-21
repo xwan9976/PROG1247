@@ -1,0 +1,168 @@
+/* Name: Xuan Wang, Student Number: 9009976 */
+
+/* no any fancy style, I just followed the instructions and added the necessary styles */
+/* I have added the comments to explain the purpose of each style */
+
+
+/* Root element selector - Demonstrates element type selector 
+   Font shorthand includes all 6 required properties */
+html {
+    font: italic small-caps bold 20px/1.5 Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Box model demonstration - Using element selector */
+body {
+    max-width: 1200px;                          /* absolute unit for max-width */
+    width: 90%;                                 /* percentage for width */
+    margin: 1rem;                               /* consistent rem units */
+    padding: 1rem;                              /* consistent rem units */
+    border: 0.1rem solid #ccc;                /* border shorthand with rem */
+}
+
+/* Layout -  id selector and multiple selector */
+main {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+/* the footer section is cleared */
+footer {
+    clear: both;
+}
+
+/* These two sections are beside each other */
+#who-is-kim {
+    float: left;
+    width: 50%;
+}
+
+#interesting-facts {
+    float: right;
+    width: 50%;
+}
+
+/* the next section is cleared */
+#famous-quotes {
+    clear: both;
+}
+
+/* Header and Footer styles */
+h1 {
+    font-size: 2.5rem;                          /* increased font size */
+}
+
+header, footer {                                /* multiple selector for shared gradient */
+    background: linear-gradient(to right, #e6e6e6, #ffffff);
+    padding: 1rem;
+}
+
+footer {
+    font-size: 0.8rem;                          /* decreased font size */
+}
+
+/* Main elements styles */
+main h2 {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    text-align: center;
+}
+
+q {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    border: 2px solid #ccc;                     /* border shorthand */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);    /* box-shadow */
+}
+
+figure {
+    border: 5px solid #ccc;                     /* added border */
+    border-radius: 10px;                          /* added rounded corners */
+    background-color: #f5f5f5;                  /* added background color */
+}
+
+figure img {
+    border: 2px solid #ccc;                     /* added border */
+    border-radius: 5px;                           /* added rounded corners */
+}
+
+figcaption { 
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+}
+
+iframe { 
+    border: 2px solid #ccc;                     /* added border using shorthand */
+}
+
+/* Aside element styles */
+aside h2 {
+    font-variant: small-caps;
+    color: #2c3e50;
+    text-align: center;                           /* center aligned */
+}
+
+#kim-jong-un-resources ul {
+    list-style: none;                             /* removed bullet points */
+}
+
+#kim-jong-un-resources a {
+    text-decoration: none;                        /* removed text decoration */
+    color: #2980b9;
+    line-height: 2;                               /* increased line height */
+}
+
+#kim-jong-un-resources a:hover { 
+    color: #e74c3c;                             /* changed color on hover */
+}
+
+/* Form element styles */
+.form-label {
+    color: #2c3e50;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    height: 2rem;
+    text-align: left;
+}
+
+/* Responsive design for screens <= 768px */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;                        /* decreased font size */
+    }
+    
+    main, aside {
+        float: none;                            /* removed floats */
+        width: 100%;                            /* adjusted width to full */
+    }
+    
+    #who-is-kim, #interesting-facts {
+        float: none;                            /* removed floats */
+        width: 100%;                            /* adjusted width to full */
+    }
+    
+    .form-control {
+        width: 90%;                             /* adjusted box model */
+        margin: 0 auto;                         /* adjusted alignment */
+    }
+}
+
