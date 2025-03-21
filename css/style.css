@@ -1,17 +1,16 @@
 /* Name: Xuan Wang, Student Number: 9009976 */
 
 /* no any fancy style, I just followed the instructions and added the necessary styles */
-/* I have added the comments to explain the purpose of each style */
+/* the styles' sequence is based on the instructions' sequence */
 
 
-/* Root element selector - Demonstrates element type selector 
-   Font shorthand includes all 6 required properties */
+/* Root element selector - includes all 6 required properties */
 html {
     font: italic small-caps bold 20px/1.5 Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
-/* Box model demonstration - Using element selector */
+/* Body element selector */
 body {
     max-width: 1200px;                          /* absolute unit for max-width */
     width: 90%;                                 /* percentage for width */
